@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import tacos.model.Taco;
 import tacos.model.TacoOrder;
 import tacos.data.OrderRepository;
 
@@ -40,7 +41,9 @@ public class OrderController {
         if(errors.hasErrors()) {
             return "orderForm";
         }
-        log.info("Order submitted: {}", order);
+        for(Taco taco: order.getTacos()) {
+            taco.setTacoOrder(order);
+        }
 
         orderRepo.save(order);
 
