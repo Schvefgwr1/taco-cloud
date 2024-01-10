@@ -1,11 +1,17 @@
 package tacos.model;
 
+import jakarta.persistence.Entity;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.Id;
+import lombok.NoArgsConstructor;
 import org.springframework.data.relational.core.mapping.Table;
 
 @Data
-@Table
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor(access= AccessLevel.PRIVATE, force=true)
 public class Ingredient {
 
     @Id
@@ -16,10 +22,5 @@ public class Ingredient {
 
     public enum Type {
         WRAP, PROTEIN, VEGGIES, CHEESE, SAUCE
-    }
-
-    public Ingredient (String name, Type type) {
-        this.name = name;
-        this.type = type;
     }
 }
