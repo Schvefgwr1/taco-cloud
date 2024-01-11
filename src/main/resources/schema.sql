@@ -31,3 +31,15 @@ create table if not exists Ingredient_Ref (
     foreign key (ingredient) references ingredient(id),
     foreign key (taco) references taco(id)
 );
+
+create table if not exists User (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  fullname VARCHAR(50) NOT NULL,
+  street VARCHAR(25) NOT NULL,
+  city VARCHAR(25) NOT NULL,
+  state VARCHAR(2) NOT NULL,
+  zip VARCHAR(10) NOT NULL,
+  phone_Number VARCHAR(11) NOT NULL
+);
