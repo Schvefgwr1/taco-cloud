@@ -54,11 +54,22 @@ public class TacoOrder implements Serializable {
     @Digits(integer=3, fraction=0, message="Invalid CVV")
     private String ccCVV;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, targetEntity = Taco.class)
     @JoinColumn(name = "taco_order_id")
     private List<Taco> tacos = new ArrayList<>();
 
+    @ManyToOne(targetEntity = User.class)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
+
     public void addTaco(Taco taco) {
         this.tacos.add(taco);
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+        this.deliveryCity = user.getCity();
+        this.deliveryStreet = user.getStreet();
+        this.deliveryZip = user.getZip();
     }
 }

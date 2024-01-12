@@ -7,6 +7,7 @@
 </head>
 <body>
 <form method="POST" th:action="@{/orders}" th:object="${tacoOrder}">
+  <input type="hidden" name="_csrf" th:value="${_csrf.token}"/>
   <h1>Order your taco creations!</h1>
   <img th:src="@{images/TacoCloud.png}"/>
   <h3>Your tacos in this order:</h3>

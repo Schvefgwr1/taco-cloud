@@ -1,5 +1,6 @@
 package tacos.web;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,12 +8,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import tacos.data.UserRepository;
 import tacos.model.Taco;
 import tacos.model.TacoOrder;
 import tacos.data.OrderRepository;
 
 import lombok.extern.slf4j.Slf4j;
 import jakarta.validation.Valid;
+import tacos.model.User;
+
+import java.security.Principal;
 
 //добавляет автоматические логи
 @Slf4j
@@ -25,8 +30,10 @@ import jakarta.validation.Valid;
 public class OrderController {
 
     private OrderRepository orderRepo;
-    public OrderController(OrderRepository orderRepo) {
+    private UserRepository userRepo;
+    public OrderController(OrderRepository orderRepo, UserRepository userRepo) {
         this.orderRepo = orderRepo;
+        this.userRepo = userRepo;
     }
 
     @GetMapping("/current")
@@ -34,16 +41,22 @@ public class OrderController {
         return "orderForm";
     }
 
+    //проверяет выражение доступа SLE перед вызовом метода (доп. к sec конфигу если это нужно)
+    @PreAuthorize("hasRole('USER')")
     @PostMapping
     public String processOrder(@Valid TacoOrder order,
                                Errors errors,
-                               SessionStatus sessionStatus) {
+                               SessionStatus sessionStatus,
+                               Principal principal) {
         if(errors.hasErrors()) {
             return "orderForm";
         }
         for(Taco taco: order.getTacos()) {
             taco.setTacoOrder(order);
         }
+
+        User user = userRepo.findUserByUsername(principal.getName());
+        order.setUser(user);
 
         orderRepo.save(order);
 

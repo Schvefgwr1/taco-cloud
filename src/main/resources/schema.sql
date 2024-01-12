@@ -1,3 +1,15 @@
+create table if not exists User (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    fullname VARCHAR(50) NOT NULL,
+    street VARCHAR(25) NOT NULL,
+    city VARCHAR(25) NOT NULL,
+    state VARCHAR(2) NOT NULL,
+    zip VARCHAR(10) NOT NULL,
+    phone_Number VARCHAR(11) NOT NULL
+);
+
 create table if not exists Taco_Order (
     id INT AUTO_INCREMENT PRIMARY KEY,
     delivery_Name varchar(50) not null,
@@ -8,7 +20,9 @@ create table if not exists Taco_Order (
     cc_Number varchar(16) not null,
     cc_Expiration varchar(5) not null,
     ccCvv varchar(3) not null,
-    placed_at timestamp not null
+    placed_at timestamp not null,
+    user_id int not null,
+    foreign key (user_id) references user(id)
 );
 
 create table if not exists Taco (
