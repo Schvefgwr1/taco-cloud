@@ -1,5 +1,6 @@
 package tacos.web;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -40,6 +41,8 @@ public class OrderController {
         return "orderForm";
     }
 
+    //проверяет выражение доступа SLE перед вызовом метода (доп. к sec конфигу если это нужно)
+    @PreAuthorize("hasRole('USER')")
     @PostMapping
     public String processOrder(@Valid TacoOrder order,
                                Errors errors,
