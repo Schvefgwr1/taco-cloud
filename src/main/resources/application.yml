@@ -8,3 +8,19 @@ spring:
   sql:
     init:
       mode: always
+server:
+  port: 8443
+  ssl:
+    key-store: C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\mykeys.jks
+    key-store-password: letmein
+    key-password: letmein
+logging:
+  file:
+    path: C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\
+    file: TacoCloud.log
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
+taco:
+  orders:
+    pageSize: 10
