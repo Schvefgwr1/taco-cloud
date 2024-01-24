@@ -54,8 +54,9 @@ public class TacoOrder implements Serializable {
     @Digits(integer=3, fraction=0, message="Invalid CVV")
     private String ccCVV;
 
-    @OneToMany(cascade = CascadeType.ALL, targetEntity = Taco.class)
-    @JoinColumn(name = "taco_order_id")
+    @ManyToMany(targetEntity=Taco.class)
+    @JoinTable(name="Taco_Ref", joinColumns = { @JoinColumn(name="taco_order") },
+            inverseJoinColumns = { @JoinColumn(name="taco") })
     private List<Taco> tacos = new ArrayList<>();
 
     @ManyToOne(targetEntity = User.class)
