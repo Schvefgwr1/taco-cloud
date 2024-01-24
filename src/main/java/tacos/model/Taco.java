@@ -36,15 +36,4 @@ public class Taco {
         this.ingredients.add(ingredient);
     }
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "taco_order_id")
-    private TacoOrder tacoOrder;
-
-    public TacoOrder getTacoOrder() {
-        return tacoOrder;
-    }
-
-    public void setTacoOrder(TacoOrder tacoOrder) {
-        this.tacoOrder = tacoOrder;
-    }
 }

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import tacos.data.TacoRepository;
 import tacos.data.UserRepository;
 import tacos.model.Taco;
 import tacos.model.TacoOrder;
@@ -33,17 +34,18 @@ import java.security.Principal;
 //поддержка создания объекта тако в сеансе (сеанс поддерживает хранение данных отдельного пользователя в течении нескольких запросов)
 @SessionAttributes("tacoOrder")
 public class OrderController {
-
     private OrderProps props;
-
     private OrderRepository orderRepo;
     private UserRepository userRepo;
+    private TacoRepository tacoRepo;
     public OrderController(OrderRepository orderRepo,
                            UserRepository userRepo,
+                           TacoRepository tacoRepo,
                            OrderProps props
     ) {
         this.orderRepo = orderRepo;
         this.userRepo = userRepo;
+        this.tacoRepo = tacoRepo;
         this.props = props;
     }
 
@@ -72,9 +74,8 @@ public class OrderController {
         if(errors.hasErrors()) {
             return "orderForm";
         }
-        for(Taco taco: order.getTacos()) {
-            taco.setTacoOrder(order);
-        }
+
+        tacoRepo.saveAll(order.getTacos());
 
         User user = userRepo.findUserByUsername(principal.getName());
         order.setUser(user);

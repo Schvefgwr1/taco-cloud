@@ -28,8 +28,6 @@ create table if not exists Taco_Order (
 create table if not exists Taco (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name varchar(50) not null,
-    taco_order_id int not null,
-    foreign key (taco_order_id) references taco_order(id),
     created_at timestamp not null
 );
 
@@ -44,4 +42,11 @@ create table if not exists Ingredient_Ref (
     taco int not null,
     foreign key (ingredient) references ingredient(id),
     foreign key (taco) references taco(id)
+);
+
+create table if not exists Taco_Ref (
+    taco int not null,
+    taco_order int not null,
+    foreign key (taco) references Taco(id),
+    foreign key (taco_order) references Taco_Order(id)
 );
