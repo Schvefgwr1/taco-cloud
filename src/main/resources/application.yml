@@ -1,4 +1,7 @@
 spring:
+  data:
+    rest:
+      base-path: /data-api
   datasource:
     url: jdbc:mysql://localhost:3306/tacocloud
     driverClassName: com.mysql.cj.jdbc.Driver

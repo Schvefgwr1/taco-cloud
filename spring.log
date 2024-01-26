@@ -1729,3 +1729,473 @@ java.lang.ClassCastException: class java.io.ObjectStreamClass cannot be cast to 
 2024-01-24T22:08:49.204+03:00  INFO 18172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2024-01-24T22:08:49.207+03:00  INFO 18172 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 0.479 seconds (process running for 15318.909)
 2024-01-24T22:08:49.208+03:00  INFO 18172 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-24T22:31:34.381+03:00  INFO 13800 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 13800 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-01-24T22:31:34.382+03:00  INFO 13800 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-01-24T22:31:34.412+03:00  INFO 13800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-24T22:31:34.412+03:00  INFO 13800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-24T22:31:34.910+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-24T22:31:34.911+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-01-24T22:31:34.929+03:00  INFO 13800 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:31:34.930+03:00  INFO 13800 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:31:34.931+03:00  INFO 13800 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:31:34.931+03:00  INFO 13800 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:31:34.932+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2024-01-24T22:31:34.939+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-24T22:31:34.940+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-24T22:31:34.962+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 4 JPA repository interfaces.
+2024-01-24T22:31:35.480+03:00  INFO 13800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-01-24T22:31:35.490+03:00  INFO 13800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-24T22:31:35.491+03:00  INFO 13800 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-01-24T22:31:35.551+03:00  INFO 13800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-24T22:31:35.552+03:00  INFO 13800 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1139 ms
+2024-01-24T22:31:35.581+03:00  INFO 13800 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-24T22:31:35.687+03:00  INFO 13800 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@526ef5fb
+2024-01-24T22:31:35.688+03:00  INFO 13800 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-24T22:31:35.695+03:00  INFO 13800 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-01-24T22:31:35.828+03:00  INFO 13800 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-24T22:31:35.885+03:00  INFO 13800 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2024-01-24T22:31:35.887+03:00  INFO 13800 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-24T22:31:36.022+03:00  INFO 13800 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-24T22:31:36.140+03:00  INFO 13800 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-24T22:31:36.190+03:00  WARN 13800 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-01-24T22:31:36.401+03:00  INFO 13800 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-24T22:31:36.967+03:00  INFO 13800 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-24T22:31:36.969+03:00  INFO 13800 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-24T22:31:37.193+03:00  INFO 13800 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-24T22:31:37.445+03:00  WARN 13800 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-24T22:31:37.797+03:00  INFO 13800 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6861c1d6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68382ace, org.springframework.security.web.context.SecurityContextHolderFilter@68eb4308, org.springframework.security.web.header.HeaderWriterFilter@5ba35d7c, org.springframework.security.web.csrf.CsrfFilter@6fd50ff1, org.springframework.security.web.authentication.logout.LogoutFilter@6f8b234c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68fbfc6b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e7fa9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54992965, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27a3caec, org.springframework.security.web.access.ExceptionTranslationFilter@53c9cb08, org.springframework.security.web.access.intercept.AuthorizationFilter@1d527497]
+2024-01-24T22:31:38.059+03:00  INFO 13800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-24T22:31:38.087+03:00  INFO 13800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-24T22:31:38.093+03:00  INFO 13800 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 4.016 seconds (process running for 4.612)
+2024-01-24T22:31:49.561+03:00  INFO 13800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-24T22:31:49.562+03:00  INFO 13800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-24T22:31:49.563+03:00  INFO 13800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-24T22:31:49.570+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/tacos
+2024-01-24T22:31:49.593+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/tacos
+2024-01-24T22:31:49.601+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:31:49.603+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:31:49.605+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:31:49.646+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:31:51.803+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/tacos
+2024-01-24T22:31:51.806+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/tacos
+2024-01-24T22:31:51.807+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:31:51.808+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:31:51.808+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:31:51.810+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:37:28.391+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /ingredients
+2024-01-24T22:37:28.399+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /ingredients
+2024-01-24T22:37:28.503+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:37:41.190+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /ingredients/1
+2024-01-24T22:37:41.195+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /ingredients/1
+2024-01-24T22:37:41.216+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:38:03.642+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /ingredients
+2024-01-24T22:38:03.646+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /ingredients
+2024-01-24T22:38:03.658+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:38:58.853+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /profile/ingredients
+2024-01-24T22:38:58.854+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /profile/ingredients
+2024-01-24T22:38:58.872+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:39:21.110+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /ingredients
+2024-01-24T22:39:21.114+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /ingredients
+2024-01-24T22:39:21.127+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:42:41.924+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /ingredients
+2024-01-24T22:42:41.927+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /ingredients
+2024-01-24T22:42:41.937+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:42:43.362+03:00  INFO 13800 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-24T22:42:43.375+03:00  INFO 13800 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-01-24T22:42:43.376+03:00  INFO 13800 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-01-24T22:42:43.381+03:00  INFO 13800 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-24T22:42:43.383+03:00  INFO 13800 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-24T22:42:43.387+03:00  INFO 13800 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-24T22:42:43.458+03:00  INFO 13800 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 13800 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-01-24T22:42:43.458+03:00  INFO 13800 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-01-24T22:42:43.645+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-24T22:42:43.646+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-01-24T22:42:43.650+03:00  INFO 13800 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:42:43.652+03:00  INFO 13800 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:42:43.652+03:00  INFO 13800 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:42:43.653+03:00  INFO 13800 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:42:43.654+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2024-01-24T22:42:43.658+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-24T22:42:43.659+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-24T22:42:43.669+03:00  INFO 13800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2024-01-24T22:42:43.768+03:00  INFO 13800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-01-24T22:42:43.770+03:00  INFO 13800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-24T22:42:43.770+03:00  INFO 13800 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-01-24T22:42:43.786+03:00  INFO 13800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-24T22:42:43.786+03:00  INFO 13800 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 326 ms
+2024-01-24T22:42:43.796+03:00  INFO 13800 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-01-24T22:42:43.799+03:00  INFO 13800 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c685721
+2024-01-24T22:42:43.799+03:00  INFO 13800 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-01-24T22:42:43.799+03:00  INFO 13800 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-01-24T22:42:43.823+03:00  INFO 13800 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-24T22:42:43.828+03:00  INFO 13800 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-24T22:42:43.828+03:00  INFO 13800 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-24T22:42:43.830+03:00  WARN 13800 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-01-24T22:42:43.842+03:00  INFO 13800 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-24T22:42:43.891+03:00  INFO 13800 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-24T22:42:43.892+03:00  INFO 13800 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-24T22:42:43.971+03:00  WARN 13800 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-24T22:42:44.095+03:00  INFO 13800 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61407b95, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19ab3610, org.springframework.security.web.context.SecurityContextHolderFilter@74daeb22, org.springframework.security.web.header.HeaderWriterFilter@4ae3cc03, org.springframework.security.web.csrf.CsrfFilter@b64c685, org.springframework.security.web.authentication.logout.LogoutFilter@5e54aeec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1fbde0b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59274bd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ab93ec8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5db00ab0, org.springframework.security.web.access.ExceptionTranslationFilter@2bd71b4d, org.springframework.security.web.access.intercept.AuthorizationFilter@69858e5]
+2024-01-24T22:42:44.174+03:00  INFO 13800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-24T22:42:44.189+03:00  INFO 13800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-24T22:42:44.192+03:00  INFO 13800 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 0.759 seconds (process running for 670.712)
+2024-01-24T22:42:44.195+03:00  INFO 13800 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-24T22:42:47.016+03:00  INFO 13800 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-24T22:42:47.016+03:00  INFO 13800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-24T22:42:47.016+03:00  INFO 13800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-01-24T22:42:47.017+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /ingredients
+2024-01-24T22:42:47.018+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /ingredients
+2024-01-24T22:42:47.020+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:42:47.021+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:42:47.022+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:42:47.026+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:42:56.859+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /data-api/ingredients
+2024-01-24T22:42:56.863+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /data-api/ingredients
+2024-01-24T22:42:56.893+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:13.578+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacos
+2024-01-24T22:43:13.581+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacos
+2024-01-24T22:43:13.583+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:13.584+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:43:13.584+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:43:13.585+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:18.734+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacos
+2024-01-24T22:43:18.737+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacos
+2024-01-24T22:43:18.745+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:18.746+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:43:18.746+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:43:18.748+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:21.597+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /data-api/taco
+2024-01-24T22:43:21.599+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /data-api/taco
+2024-01-24T22:43:21.601+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:21.601+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:43:21.602+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:43:21.603+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:22.420+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /data-api/taco
+2024-01-24T22:43:22.422+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /data-api/taco
+2024-01-24T22:43:22.424+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:22.424+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:43:22.425+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:43:22.426+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:28.877+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacos
+2024-01-24T22:43:28.879+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacos
+2024-01-24T22:43:28.880+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:28.881+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:43:28.881+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:43:28.882+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:29.658+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacos
+2024-01-24T22:43:29.660+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacos
+2024-01-24T22:43:29.661+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:29.662+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:43:29.662+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:43:29.663+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:36.655+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /data-api/taco_orders
+2024-01-24T22:43:36.657+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /data-api/taco_orders
+2024-01-24T22:43:36.659+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:36.659+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:43:36.659+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:43:36.660+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:40.829+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /data-api/orders
+2024-01-24T22:43:40.831+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /data-api/orders
+2024-01-24T22:43:40.834+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:40.834+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:43:40.835+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:43:40.835+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:43:46.783+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /data-api/users
+2024-01-24T22:43:46.785+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /data-api/users
+2024-01-24T22:43:46.801+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:44:14.234+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacos
+2024-01-24T22:44:14.235+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacos
+2024-01-24T22:44:14.236+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:44:14.237+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:44:14.237+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:44:14.240+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:44:17.491+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /data-api/orders
+2024-01-24T22:44:17.492+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /data-api/orders
+2024-01-24T22:44:17.495+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:44:17.495+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:44:17.496+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:44:17.497+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:44:19.271+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /data-api/order
+2024-01-24T22:44:19.272+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /data-api/order
+2024-01-24T22:44:19.274+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:44:19.274+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:44:19.275+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:44:19.276+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:44:21.961+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /data-api/orders/1
+2024-01-24T22:44:21.962+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /data-api/orders/1
+2024-01-24T22:44:21.964+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:44:21.964+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:44:21.966+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:44:21.967+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:37.191+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacoes
+2024-01-24T22:45:37.194+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacoes
+2024-01-24T22:45:37.228+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:50.601+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /data-api/orders
+2024-01-24T22:45:50.602+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /data-api/orders
+2024-01-24T22:45:50.605+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:50.605+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:45:50.606+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:45:50.607+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:53.551+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /data-api/orderes
+2024-01-24T22:45:53.552+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /data-api/orderes
+2024-01-24T22:45:53.553+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:53.553+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:45:53.554+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:45:53.555+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:55.960+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /data-api/orderoes
+2024-01-24T22:45:55.962+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /data-api/orderoes
+2024-01-24T22:45:55.963+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:55.964+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:45:55.964+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:45:55.965+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:57.818+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /data-api/order
+2024-01-24T22:45:57.820+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /data-api/order
+2024-01-24T22:45:57.822+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:57.822+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:45:57.823+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:45:57.824+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:58.975+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /data-api/orders
+2024-01-24T22:45:58.976+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /data-api/orders
+2024-01-24T22:45:58.977+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:45:58.978+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:45:58.978+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:45:58.980+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:19.997+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:19.998+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:20.000+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:20.002+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:20.002+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:20.003+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:23.214+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:23.215+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:23.217+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:23.217+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:23.218+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:23.219+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:23.912+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:23.913+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:23.914+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:23.914+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:23.915+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:23.916+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:24.581+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:24.582+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:24.583+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:24.584+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:24.584+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:24.586+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:25.368+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:25.369+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:25.371+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:25.371+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:25.372+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:25.373+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:26.135+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:26.135+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:26.136+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:26.137+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:26.137+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:26.138+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:26.961+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:26.962+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:26.963+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:26.963+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:26.964+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:26.965+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:27.748+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:27.749+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:27.750+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:27.750+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:27.750+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:27.752+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:28.407+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:28.408+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:28.409+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:28.409+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:28.410+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:28.411+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:31.792+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/
+2024-01-24T22:46:31.793+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/
+2024-01-24T22:46:31.795+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:31.795+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:31.796+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:31.797+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:32.458+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/
+2024-01-24T22:46:32.459+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/
+2024-01-24T22:46:32.460+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:32.460+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:32.461+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:32.463+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:33.132+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/
+2024-01-24T22:46:33.133+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/
+2024-01-24T22:46:33.134+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:33.134+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:33.135+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:33.136+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:41.458+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /data-api/api
+2024-01-24T22:46:41.459+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /data-api/api
+2024-01-24T22:46:41.462+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:41.462+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:41.462+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:41.463+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:42.177+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /data-api/api
+2024-01-24T22:46:42.178+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /data-api/api
+2024-01-24T22:46:42.179+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:42.181+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:42.181+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:42.183+03:00 DEBUG 13800 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:42.721+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /data-api/api
+2024-01-24T22:46:42.722+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /data-api/api
+2024-01-24T22:46:42.722+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:42.723+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:42.723+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:42.724+03:00 DEBUG 13800 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:43.254+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /data-api/api
+2024-01-24T22:46:43.256+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /data-api/api
+2024-01-24T22:46:43.257+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:43.257+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:43.257+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:43.258+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:43.848+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /data-api/api
+2024-01-24T22:46:43.850+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /data-api/api
+2024-01-24T22:46:43.851+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:43.851+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:43.852+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:43.853+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:44.394+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /data-api/api
+2024-01-24T22:46:44.395+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /data-api/api
+2024-01-24T22:46:44.396+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:44.396+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:44.396+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:44.397+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:59.426+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:46:59.427+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:46:59.429+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:46:59.429+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:46:59.431+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:46:59.432+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:47:00.142+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:47:00.143+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:47:00.144+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:47:00.145+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:47:00.146+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:47:00.147+03:00 DEBUG 13800 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:47:04.179+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:47:04.180+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:47:04.180+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:47:04.180+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:47:04.181+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:47:04.182+03:00 DEBUG 13800 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:47:05.245+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:47:05.246+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:47:05.247+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:47:05.248+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:47:05.248+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:47:05.249+03:00 DEBUG 13800 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:47:05.944+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:47:05.944+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:47:05.946+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:47:05.946+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:47:05.946+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:47:05.947+03:00 DEBUG 13800 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:48:34.283+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:48:34.283+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:48:34.285+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:48:34.285+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:48:34.285+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:48:34.286+03:00 DEBUG 13800 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:48:35.027+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:48:35.028+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:48:35.029+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:48:35.029+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:48:35.029+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:48:35.030+03:00 DEBUG 13800 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:48:35.735+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:48:35.736+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:48:35.737+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:48:35.737+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:48:35.738+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:48:35.739+03:00 DEBUG 13800 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:48:36.362+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api
+2024-01-24T22:48:36.362+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api
+2024-01-24T22:48:36.363+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:48:36.363+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-01-24T22:48:36.363+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-01-24T22:48:36.364+03:00 DEBUG 13800 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:51:05.801+03:00  INFO 13800 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-24T22:51:05.802+03:00  INFO 13800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-01-24T22:51:05.803+03:00  INFO 13800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-01-24T22:51:09.283+03:00  INFO 26580 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 26580 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-01-24T22:51:09.284+03:00  INFO 26580 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-01-24T22:51:09.313+03:00  INFO 26580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-24T22:51:09.313+03:00  INFO 26580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-24T22:51:09.755+03:00  INFO 26580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-24T22:51:09.756+03:00  INFO 26580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-01-24T22:51:09.773+03:00  INFO 26580 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:51:09.774+03:00  INFO 26580 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:51:09.775+03:00  INFO 26580 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:51:09.776+03:00  INFO 26580 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-01-24T22:51:09.776+03:00  INFO 26580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2024-01-24T22:51:09.782+03:00  INFO 26580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-24T22:51:09.782+03:00  INFO 26580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-24T22:51:09.802+03:00  INFO 26580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 4 JPA repository interfaces.
+2024-01-24T22:51:10.263+03:00  INFO 26580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-01-24T22:51:10.271+03:00  INFO 26580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-24T22:51:10.271+03:00  INFO 26580 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-01-24T22:51:10.315+03:00  INFO 26580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-24T22:51:10.315+03:00  INFO 26580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1001 ms
+2024-01-24T22:51:10.337+03:00  INFO 26580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-24T22:51:10.422+03:00  INFO 26580 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ba6b1e8
+2024-01-24T22:51:10.424+03:00  INFO 26580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-24T22:51:10.430+03:00  INFO 26580 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-01-24T22:51:10.554+03:00  INFO 26580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-24T22:51:10.597+03:00  INFO 26580 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2024-01-24T22:51:10.599+03:00  INFO 26580 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-24T22:51:10.694+03:00  INFO 26580 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-24T22:51:10.793+03:00  INFO 26580 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-24T22:51:10.833+03:00  WARN 26580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-01-24T22:51:11.022+03:00  INFO 26580 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-24T22:51:11.548+03:00  INFO 26580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-24T22:51:11.550+03:00  INFO 26580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-24T22:51:11.768+03:00  INFO 26580 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-24T22:51:12.008+03:00  WARN 26580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-24T22:51:12.358+03:00  INFO 26580 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@184b8f68, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b7ab590, org.springframework.security.web.context.SecurityContextHolderFilter@6ec810cb, org.springframework.security.web.header.HeaderWriterFilter@1e43a589, org.springframework.security.web.csrf.CsrfFilter@3f05ce32, org.springframework.security.web.authentication.logout.LogoutFilter@64ba4266, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3628a153, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b681148, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f8fca60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@176f1e8, org.springframework.security.web.access.ExceptionTranslationFilter@1f68712a, org.springframework.security.web.access.intercept.AuthorizationFilter@4e6fa13]
+2024-01-24T22:51:12.665+03:00  INFO 26580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-24T22:51:12.699+03:00  INFO 26580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-24T22:51:12.707+03:00  INFO 26580 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 3.709 seconds (process running for 4.219)
+2024-01-24T22:51:34.901+03:00  INFO 26580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-24T22:51:34.902+03:00  INFO 26580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-24T22:51:34.903+03:00  INFO 26580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-24T22:51:34.908+03:00 DEBUG 26580 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /data-api/users
+2024-01-24T22:51:34.934+03:00 DEBUG 26580 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /data-api/users
+2024-01-24T22:51:35.063+03:00 DEBUG 26580 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:51:43.520+03:00 DEBUG 26580 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacos
+2024-01-24T22:51:43.525+03:00 DEBUG 26580 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacos
+2024-01-24T22:51:43.558+03:00 DEBUG 26580 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:51:53.635+03:00 DEBUG 26580 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /data-api/orders
+2024-01-24T22:51:53.641+03:00 DEBUG 26580 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /data-api/orders
+2024-01-24T22:51:53.662+03:00 DEBUG 26580 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:52:04.567+03:00 DEBUG 26580 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /data-api/ingredients
+2024-01-24T22:52:04.572+03:00 DEBUG 26580 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /data-api/ingredients
+2024-01-24T22:52:04.588+03:00 DEBUG 26580 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:52:40.356+03:00 DEBUG 26580 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /data-api/ingredients
+2024-01-24T22:52:40.360+03:00 DEBUG 26580 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /data-api/ingredients
+2024-01-24T22:52:40.373+03:00 DEBUG 26580 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:52:51.891+03:00 DEBUG 26580 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacos
+2024-01-24T22:52:51.895+03:00 DEBUG 26580 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacos
+2024-01-24T22:52:51.904+03:00 DEBUG 26580 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:54:13.166+03:00 DEBUG 26580 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /data-api/ingredients
+2024-01-24T22:54:13.169+03:00 DEBUG 26580 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /data-api/ingredients
+2024-01-24T22:54:13.181+03:00 DEBUG 26580 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:54:23.282+03:00 DEBUG 26580 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /data-api/ingredients?size=2
+2024-01-24T22:54:23.287+03:00 DEBUG 26580 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /data-api/ingredients?size=2
+2024-01-24T22:54:23.298+03:00 DEBUG 26580 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:54:31.963+03:00 DEBUG 26580 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /data-api/ingredients?size=2
+2024-01-24T22:54:31.966+03:00 DEBUG 26580 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /data-api/ingredients?size=2
+2024-01-24T22:54:31.979+03:00 DEBUG 26580 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T22:54:58.187+03:00 DEBUG 26580 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /data-api/tacos?sort=createdAt,desc&page=0&size=12
+2024-01-24T22:54:58.191+03:00 DEBUG 26580 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /data-api/tacos?sort=createdAt,desc&page=0&size=12
+2024-01-24T22:54:58.212+03:00 DEBUG 26580 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-01-24T23:03:17.160+03:00  INFO 26580 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-24T23:03:17.162+03:00  INFO 26580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-24T23:03:17.166+03:00  INFO 26580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
