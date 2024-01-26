@@ -7,9 +7,11 @@ import lombok.*;
 import jakarta.persistence.Id;
 
 import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 @Data
 @Entity
+@RestResource(rel="ingredients", path="ingredients")
 @AllArgsConstructor
 @NoArgsConstructor(access= AccessLevel.PRIVATE, force=true)
 @RequiredArgsConstructor

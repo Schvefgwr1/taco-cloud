@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.CreditCardNumber;
 import jakarta.persistence.Id;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -18,6 +19,7 @@ import java.util.List;
 
 @Data
 @Entity
+@RestResource(rel="orders", path="orders")
 public class TacoOrder implements Serializable {
 
     @Serial
