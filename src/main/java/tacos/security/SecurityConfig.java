@@ -3,6 +3,7 @@ package tacos.security;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -10,6 +11,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.servlet.util.matcher.MvcRequestMatcher;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
+
+import static org.springframework.security.web.util.matcher.AntPathRequestMatcher.antMatcher;
 
 @Configuration
 @EnableGlobalMethodSecurity(securedEnabled = true)
@@ -35,11 +38,11 @@ public class SecurityConfig {
                     ).hasRole("USER")
                     //для API
                     .requestMatchers(
-                          mvc.pattern("/api/ingredients")
-                    ).hasRole("ADMIN")
+                            antMatcher(HttpMethod.POST, "/api/ingredients")
+                    ).hasAuthority("SCOPE_writeIngredients")
                     .requestMatchers(
-                            mvc.pattern("/api/ingredients/**")
-                    ).hasRole("ADMIN")
+                            antMatcher(HttpMethod.DELETE, "/api/ingredients/**")
+                    ).hasAuthority("SCOPE_deleteIngredients")
                     .requestMatchers(mvc.pattern("/"), mvc.pattern("/**")).permitAll()
                 )
                 .formLogin(login -> login
@@ -50,6 +53,7 @@ public class SecurityConfig {
                         .logoutUrl("/logout")
                         .logoutSuccessUrl("/")
                 )
+                .oauth2ResourceServer((oauth2) -> oauth2.jwt(Customizer.withDefaults()));
         ;
         try {
             return http.build();
