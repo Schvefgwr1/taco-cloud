@@ -1,4 +1,7 @@
 spring:
+  artemis:
+    user: tacoweb
+    password: 12353890
   data:
     rest:
       base-path: /data-api
