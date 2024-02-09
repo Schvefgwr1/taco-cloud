@@ -4,9 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.validator.constraints.CreditCardNumber;
 import jakarta.persistence.Id;
 import org.springframework.data.rest.core.annotation.RestResource;
@@ -71,8 +69,12 @@ public class TacoOrder implements Serializable {
 
     public void setUser(User user) {
         this.user = user;
-        this.deliveryCity = user.getCity();
-        this.deliveryStreet = user.getStreet();
-        this.deliveryZip = user.getZip();
+        if(user != null) {
+            this.deliveryCity = user.getCity();
+            this.deliveryStreet = user.getStreet();
+            this.deliveryZip = user.getZip();
+        }
     }
+
+
 }
