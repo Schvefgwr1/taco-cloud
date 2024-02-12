@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import tacos.data.OrderRepository;
 import tacos.data.TacoRepository;
 import tacos.data.UserRepository;
+import tacos.kitchen.RabbitOrderReceiver;
 import tacos.message.RabbitOrderMessagingService;
 import tacos.model.TacoOrder;
 //import tacos.kitchen.messaging.jms.OrderReceiver;
@@ -23,20 +24,20 @@ public class OrderApiController {
     private RabbitOrderMessagingService messageService;
     private TacoRepository tacoRepository;
     private UserRepository userRepository;
-    //private OrderReceiver orderReceiver;
+    private RabbitOrderReceiver orderReceiver;
     @Autowired
     public OrderApiController(
             OrderRepository repo,
             TacoRepository tacoRepository,
             UserRepository userRepository,
-            RabbitOrderMessagingService messageService
-            //OrderReceiver orderReceiver
+            RabbitOrderMessagingService messageService,
+            RabbitOrderReceiver orderReceiver
     ) {
         this.repo = repo;
         this.messageService = messageService;
         this.tacoRepository = tacoRepository;
         this.userRepository = userRepository;
-        //this.orderReceiver = orderReceiver;
+        this.orderReceiver = orderReceiver;
     }
 
     @GetMapping
@@ -52,8 +53,8 @@ public class OrderApiController {
         return repo.save(order);
     }
 
-//    @GetMapping(value="/receive_order")
-//    public TacoOrder getReceiveOrder() {
-//        return orderReceiver.receiveOrder();
-//    }
+    @GetMapping(value="/receive_order")
+    public TacoOrder getReceiveOrder() {
+        return orderReceiver.receiveOrder();
+    }
 }
