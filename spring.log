@@ -5664,3 +5664,1313 @@ java.lang.ClassNotFoundException: class tacos.model.TacoOrder
 2024-02-09T18:09:12.366+03:00  INFO 13744 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-02-09T18:09:12.368+03:00  INFO 13744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-02-09T18:09:12.371+03:00  INFO 13744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-12T18:30:45.294+03:00  INFO 42476 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 42476 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-02-12T18:30:45.296+03:00  INFO 42476 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T18:30:45.336+03:00  INFO 42476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-12T18:30:45.336+03:00  INFO 42476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-12T18:30:46.041+03:00  INFO 42476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:30:46.042+03:00  INFO 42476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-02-12T18:30:46.067+03:00  INFO 42476 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:30:46.068+03:00  INFO 42476 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:30:46.069+03:00  INFO 42476 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:30:46.070+03:00  INFO 42476 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:30:46.071+03:00  INFO 42476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2024-02-12T18:30:46.078+03:00  INFO 42476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:30:46.079+03:00  INFO 42476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-12T18:30:46.110+03:00  INFO 42476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
+2024-02-12T18:30:46.720+03:00  INFO 42476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-12T18:30:46.730+03:00  INFO 42476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-12T18:30:46.730+03:00  INFO 42476 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-02-12T18:30:46.781+03:00  INFO 42476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-12T18:30:46.781+03:00  INFO 42476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1443 ms
+2024-02-12T18:30:46.808+03:00  INFO 42476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-12T18:30:46.916+03:00  INFO 42476 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74800413
+2024-02-12T18:30:46.918+03:00  INFO 42476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-12T18:30:46.929+03:00  INFO 42476 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-02-12T18:30:47.065+03:00  INFO 42476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-12T18:30:47.126+03:00  INFO 42476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2024-02-12T18:30:47.128+03:00  INFO 42476 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-12T18:30:47.270+03:00  INFO 42476 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:30:47.389+03:00  INFO 42476 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-12T18:30:47.448+03:00  WARN 42476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-02-12T18:30:47.663+03:00  INFO 42476 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:30:48.276+03:00  INFO 42476 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-12T18:30:48.279+03:00  INFO 42476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:30:48.605+03:00  INFO 42476 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-12T18:30:48.907+03:00  WARN 42476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-12T18:30:49.362+03:00  INFO 42476 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b90481d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3933063f, org.springframework.security.web.context.SecurityContextHolderFilter@35791665, org.springframework.security.web.header.HeaderWriterFilter@6e3928fe, org.springframework.security.web.authentication.logout.LogoutFilter@21b1bf52, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76a89018, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23fd8b7a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25735069, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b35ca6c, org.springframework.security.web.access.ExceptionTranslationFilter@41af9a76, org.springframework.security.web.access.intercept.AuthorizationFilter@782c6f8b]
+2024-02-12T18:30:49.755+03:00  INFO 42476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-12T18:30:49.788+03:00  INFO 42476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-12T18:30:49.797+03:00  INFO 42476 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 4.902 seconds (process running for 5.607)
+2024-02-12T18:31:03.324+03:00  INFO 42476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-12T18:31:03.324+03:00  INFO 42476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-12T18:31:03.326+03:00  INFO 42476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-02-12T18:31:03.332+03:00 DEBUG 42476 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/orders
+2024-02-12T18:31:03.354+03:00 DEBUG 42476 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/orders
+2024-02-12T18:31:03.498+03:00  INFO 42476 --- [http-nio-8080-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-02-12T18:31:03.517+03:00  INFO 42476 --- [http-nio-8080-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2024-02-12T18:31:03.552+03:00  INFO 42476 --- [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-02-12T18:31:03.552+03:00  INFO 42476 --- [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-02-12T18:31:03.552+03:00  INFO 42476 --- [http-nio-8080-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1707751863551
+2024-02-12T18:31:03.904+03:00  WARN 42476 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {tacocloud.orders.topic=LEADER_NOT_AVAILABLE}
+2024-02-12T18:31:03.906+03:00  INFO 42476 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: K7Z0XpJjRqmb_ymR7l3Tow
+2024-02-12T18:31:04.031+03:00  INFO 42476 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+2024-02-12T18:31:04.035+03:00  WARN 42476 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {tacocloud.orders.topic=LEADER_NOT_AVAILABLE}
+2024-02-12T18:31:04.138+03:00  INFO 42476 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition tacocloud.orders.topic-0 to 0 since the associated topicId changed from null to ipuojmSBQJqeZYPU1N29XQ
+2024-02-12T18:31:04.229+03:00 DEBUG 42476 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-02-12T18:32:59.741+03:00 DEBUG 42476 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/orders
+2024-02-12T18:32:59.743+03:00 DEBUG 42476 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/orders
+2024-02-12T18:32:59.761+03:00 DEBUG 42476 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-02-12T18:33:19.056+03:00  INFO 42476 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-02-12T18:33:19.060+03:00  INFO 42476 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-02-12T18:33:19.060+03:00  INFO 42476 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-12T18:33:19.060+03:00  INFO 42476 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-02-12T18:33:19.060+03:00  INFO 42476 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2024-02-12T18:33:19.063+03:00  INFO 42476 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:33:19.066+03:00  INFO 42476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-12T18:33:19.069+03:00  INFO 42476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-12T18:47:48.643+03:00  INFO 41916 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 41916 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-02-12T18:47:48.644+03:00  INFO 41916 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T18:47:48.678+03:00  INFO 41916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-12T18:47:48.678+03:00  INFO 41916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-12T18:47:49.230+03:00  INFO 41916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:47:49.231+03:00  INFO 41916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-02-12T18:47:49.252+03:00  INFO 41916 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:47:49.253+03:00  INFO 41916 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:47:49.253+03:00  INFO 41916 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:47:49.255+03:00  INFO 41916 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:47:49.256+03:00  INFO 41916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2024-02-12T18:47:49.262+03:00  INFO 41916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:47:49.263+03:00  INFO 41916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-12T18:47:49.289+03:00  INFO 41916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2024-02-12T18:47:49.828+03:00  INFO 41916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-12T18:47:49.835+03:00  INFO 41916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-12T18:47:49.835+03:00  INFO 41916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-02-12T18:47:49.884+03:00  INFO 41916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-12T18:47:49.885+03:00  INFO 41916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1206 ms
+2024-02-12T18:47:49.912+03:00  INFO 41916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-12T18:47:50.022+03:00  INFO 41916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@818cb6a
+2024-02-12T18:47:50.025+03:00  INFO 41916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-12T18:47:50.038+03:00  INFO 41916 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-02-12T18:47:50.195+03:00  INFO 41916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-12T18:47:50.248+03:00  INFO 41916 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2024-02-12T18:47:50.250+03:00  INFO 41916 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-12T18:47:50.384+03:00  INFO 41916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:47:50.481+03:00  INFO 41916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-12T18:47:50.523+03:00  WARN 41916 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-02-12T18:47:50.707+03:00  INFO 41916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:47:51.239+03:00  INFO 41916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-12T18:47:51.242+03:00  INFO 41916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:47:51.538+03:00  INFO 41916 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-12T18:47:51.809+03:00  WARN 41916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-12T18:47:52.219+03:00  INFO 41916 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f303680, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f00c00b, org.springframework.security.web.context.SecurityContextHolderFilter@5c3b1ba5, org.springframework.security.web.header.HeaderWriterFilter@be4d0ee, org.springframework.security.web.authentication.logout.LogoutFilter@31622342, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50c423a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38c913c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d554961, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@494a180c, org.springframework.security.web.access.ExceptionTranslationFilter@5a4a4a5a, org.springframework.security.web.access.intercept.AuthorizationFilter@6a176cf2]
+2024-02-12T18:47:52.539+03:00  INFO 41916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-12T18:47:52.602+03:00  INFO 41916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-12T18:47:52.605+03:00  WARN 41916 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+2024-02-12T18:47:52.607+03:00  INFO 41916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:47:52.610+03:00  INFO 41916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-12T18:47:52.612+03:00  INFO 41916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-12T18:47:52.624+03:00  INFO 41916 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-12T18:47:52.634+03:00  INFO 41916 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-12T18:47:52.650+03:00 ERROR 41916 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:357) ~[spring-context-6.0.11.jar:6.0.11]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:156) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:124) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:958) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:611) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar:3.1.3]
+	at tacos.TacoCloudApplication.main(TacoCloudApplication.java:36) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.3.jar:3.1.3]
+Caused by: java.lang.IllegalStateException: No group.id found in consumer config, container properties, or @KafkaListener annotation; a group.id is required when group management is used.
+	at org.springframework.util.Assert.state(Assert.java:76) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.checkGroupId(AbstractMessageListenerContainer.java:626) ~[spring-kafka-3.0.10.jar:3.0.10]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:552) ~[spring-kafka-3.0.10.jar:3.0.10]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:383) ~[spring-kafka-3.0.10.jar:3.0.10]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:328) ~[spring-kafka-3.0.10.jar:3.0.10]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:179) ~[spring-context-6.0.11.jar:6.0.11]
+	... 18 common frames omitted
+
+2024-02-12T18:50:44.685+03:00  INFO 41192 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 41192 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-02-12T18:50:44.686+03:00  INFO 41192 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T18:50:44.720+03:00  INFO 41192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-12T18:50:44.720+03:00  INFO 41192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-12T18:50:45.326+03:00  INFO 41192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:50:45.327+03:00  INFO 41192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-02-12T18:50:45.352+03:00  INFO 41192 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:50:45.353+03:00  INFO 41192 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:50:45.354+03:00  INFO 41192 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:50:45.356+03:00  INFO 41192 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:50:45.356+03:00  INFO 41192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2024-02-12T18:50:45.364+03:00  INFO 41192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:50:45.365+03:00  INFO 41192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-12T18:50:45.391+03:00  INFO 41192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+2024-02-12T18:50:45.905+03:00  INFO 41192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-12T18:50:45.912+03:00  INFO 41192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-12T18:50:45.912+03:00  INFO 41192 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-02-12T18:50:45.959+03:00  INFO 41192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-12T18:50:45.960+03:00  INFO 41192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1239 ms
+2024-02-12T18:50:45.988+03:00  INFO 41192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-12T18:50:46.079+03:00  INFO 41192 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e0f4ab7
+2024-02-12T18:50:46.081+03:00  INFO 41192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-12T18:50:46.090+03:00  INFO 41192 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-02-12T18:50:46.212+03:00  INFO 41192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-12T18:50:46.252+03:00  INFO 41192 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2024-02-12T18:50:46.254+03:00  INFO 41192 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-12T18:50:46.355+03:00  INFO 41192 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:50:46.456+03:00  INFO 41192 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-12T18:50:46.496+03:00  WARN 41192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-02-12T18:50:46.676+03:00  INFO 41192 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:50:47.215+03:00  INFO 41192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-12T18:50:47.218+03:00  INFO 41192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:50:47.515+03:00  INFO 41192 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-12T18:50:47.791+03:00  WARN 41192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-12T18:50:48.210+03:00  INFO 41192 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13e75a39, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33bf0334, org.springframework.security.web.context.SecurityContextHolderFilter@ac88b4c, org.springframework.security.web.header.HeaderWriterFilter@437110e6, org.springframework.security.web.authentication.logout.LogoutFilter@11fbbe26, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@386e4c60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ee673cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f6e6d31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@131f6906, org.springframework.security.web.access.ExceptionTranslationFilter@eeb0a17, org.springframework.security.web.access.intercept.AuthorizationFilter@6d4aa6b9]
+2024-02-12T18:50:48.584+03:00  INFO 41192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-12T18:50:48.643+03:00  INFO 41192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-12T18:50:48.645+03:00  WARN 41192 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+2024-02-12T18:50:48.648+03:00  INFO 41192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:50:48.650+03:00  INFO 41192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-12T18:50:48.653+03:00  INFO 41192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-12T18:50:48.666+03:00  INFO 41192 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-12T18:50:48.677+03:00  INFO 41192 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-12T18:50:48.691+03:00 ERROR 41192 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:357) ~[spring-context-6.0.11.jar:6.0.11]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:156) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:124) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:958) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:611) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar:3.1.3]
+	at tacos.TacoCloudApplication.main(TacoCloudApplication.java:36) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.3.jar:3.1.3]
+Caused by: java.lang.IllegalStateException: No group.id found in consumer config, container properties, or @KafkaListener annotation; a group.id is required when group management is used.
+	at org.springframework.util.Assert.state(Assert.java:76) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.checkGroupId(AbstractMessageListenerContainer.java:626) ~[spring-kafka-3.0.10.jar:3.0.10]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:552) ~[spring-kafka-3.0.10.jar:3.0.10]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:383) ~[spring-kafka-3.0.10.jar:3.0.10]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:328) ~[spring-kafka-3.0.10.jar:3.0.10]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:179) ~[spring-context-6.0.11.jar:6.0.11]
+	... 18 common frames omitted
+
+2024-02-12T18:52:52.923+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 39260 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-02-12T18:52:52.927+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T18:52:52.960+03:00  INFO 39260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-12T18:52:52.960+03:00  INFO 39260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-12T18:52:53.488+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:52:53.490+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-02-12T18:52:53.512+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:52:53.513+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:52:53.513+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:52:53.514+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:52:53.515+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2024-02-12T18:52:53.522+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:52:53.522+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-12T18:52:53.546+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 4 JPA repository interfaces.
+2024-02-12T18:52:54.077+03:00  INFO 39260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-12T18:52:54.084+03:00  INFO 39260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-12T18:52:54.085+03:00  INFO 39260 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-02-12T18:52:54.133+03:00  INFO 39260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-12T18:52:54.133+03:00  INFO 39260 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1173 ms
+2024-02-12T18:52:54.157+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-12T18:52:54.258+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e0f4ab7
+2024-02-12T18:52:54.260+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-12T18:52:54.268+03:00  INFO 39260 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-02-12T18:52:54.391+03:00  INFO 39260 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-12T18:52:54.437+03:00  INFO 39260 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2024-02-12T18:52:54.439+03:00  INFO 39260 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-12T18:52:54.548+03:00  INFO 39260 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:52:54.645+03:00  INFO 39260 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-12T18:52:54.685+03:00  WARN 39260 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-02-12T18:52:54.873+03:00  INFO 39260 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:52:55.481+03:00  INFO 39260 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-12T18:52:55.483+03:00  INFO 39260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:52:55.785+03:00  INFO 39260 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-12T18:52:56.060+03:00  WARN 39260 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-12T18:52:56.437+03:00  INFO 39260 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44c22666, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6688193b, org.springframework.security.web.context.SecurityContextHolderFilter@399320b4, org.springframework.security.web.header.HeaderWriterFilter@24f0e814, org.springframework.security.web.authentication.logout.LogoutFilter@1e85c48, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@297849ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@616609e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e5d09e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40fde73b, org.springframework.security.web.access.ExceptionTranslationFilter@5dd3ffe2, org.springframework.security.web.access.intercept.AuthorizationFilter@4774cb2b]
+2024-02-12T18:52:56.757+03:00  INFO 39260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-12T18:52:56.807+03:00  INFO 39260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-12T18:52:56.847+03:00  INFO 39260 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kitchen-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kitchen
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-02-12T18:52:56.918+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-02-12T18:52:56.918+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-02-12T18:52:56.918+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1707753176917
+2024-02-12T18:52:56.920+03:00  INFO 39260 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Subscribed to topic(s): tacocloud.orders.topic
+2024-02-12T18:52:56.935+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 4.343 seconds (process running for 4.916)
+2024-02-12T18:52:57.154+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Resetting the last seen epoch of partition tacocloud.orders.topic-0 to 0 since the associated topicId changed from null to ipuojmSBQJqeZYPU1N29XQ
+2024-02-12T18:52:57.156+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Cluster ID: K7Z0XpJjRqmb_ymR7l3Tow
+2024-02-12T18:52:57.804+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Discovered group coordinator DESKTOP-G1TVM4T:9092 (id: 2147483647 rack: null)
+2024-02-12T18:52:57.806+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] (Re-)joining group
+2024-02-12T18:52:57.828+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Request joining group due to: need to re-join with the given member-id: consumer-kitchen-1-6f46525f-5691-4a67-93bb-cd231b276131
+2024-02-12T18:52:57.828+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-02-12T18:52:57.828+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] (Re-)joining group
+2024-02-12T18:52:57.845+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Successfully joined group with generation Generation{generationId=1, memberId='consumer-kitchen-1-6f46525f-5691-4a67-93bb-cd231b276131', protocol='range'}
+2024-02-12T18:52:57.848+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Finished assignment for group at generation 1: {consumer-kitchen-1-6f46525f-5691-4a67-93bb-cd231b276131=Assignment(partitions=[tacocloud.orders.topic-0])}
+2024-02-12T18:52:57.865+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Successfully synced group in generation Generation{generationId=1, memberId='consumer-kitchen-1-6f46525f-5691-4a67-93bb-cd231b276131', protocol='range'}
+2024-02-12T18:52:57.866+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Notifying assignor about the new Assignment(partitions=[tacocloud.orders.topic-0])
+2024-02-12T18:52:57.868+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Adding newly assigned partitions: tacocloud.orders.topic-0
+2024-02-12T18:52:57.877+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Found no committed offset for partition tacocloud.orders.topic-0
+2024-02-12T18:52:57.880+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Found no committed offset for partition tacocloud.orders.topic-0
+2024-02-12T18:52:57.885+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Resetting offset for partition tacocloud.orders.topic-0 to position FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-G1TVM4T:9092 (id: 0 rack: null)], epoch=0}}.
+2024-02-12T18:52:57.902+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: partitions assigned: [tacocloud.orders.topic-0]
+2024-02-12T18:53:12.089+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-12T18:53:12.089+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-12T18:53:12.091+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-12T18:53:12.097+03:00 DEBUG 39260 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/orders
+2024-02-12T18:53:12.113+03:00 DEBUG 39260 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/orders
+2024-02-12T18:53:12.237+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-02-12T18:53:12.243+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2024-02-12T18:53:12.255+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-02-12T18:53:12.255+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-02-12T18:53:12.255+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1707753192255
+2024-02-12T18:53:12.260+03:00  INFO 39260 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition tacocloud.orders.topic-0 to 0 since the associated topicId changed from null to ipuojmSBQJqeZYPU1N29XQ
+2024-02-12T18:53:12.260+03:00  INFO 39260 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: K7Z0XpJjRqmb_ymR7l3Tow
+2024-02-12T18:53:12.262+03:00  INFO 39260 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 1 with epoch 0
+2024-02-12T18:53:12.346+03:00 DEBUG 39260 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-02-12T18:53:55.542+03:00 DEBUG 39260 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/orders
+2024-02-12T18:53:55.543+03:00 DEBUG 39260 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/orders
+2024-02-12T18:54:08.767+03:00 DEBUG 39260 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-02-12T18:54:25.111+03:00 DEBUG 39260 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/orders
+2024-02-12T18:54:25.112+03:00 DEBUG 39260 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/orders
+2024-02-12T18:55:01.198+03:00 DEBUG 39260 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-02-12T18:55:34.786+03:00  INFO 39260 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-02-12T18:55:34.790+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Revoke previously assigned partitions tacocloud.orders.topic-0
+2024-02-12T18:55:34.790+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: partitions revoked: [tacocloud.orders.topic-0]
+2024-02-12T18:55:34.791+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Member consumer-kitchen-1-6f46525f-5691-4a67-93bb-cd231b276131 sending LeaveGroup request to coordinator DESKTOP-G1TVM4T:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-02-12T18:55:34.791+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-02-12T18:55:34.791+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Request joining group due to: consumer pro-actively leaving the group
+2024-02-12T18:55:34.791+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Unsubscribed all topics or patterns and assigned partitions
+2024-02-12T18:55:34.791+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-02-12T18:55:34.791+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Request joining group due to: consumer pro-actively leaving the group
+2024-02-12T18:55:34.800+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-02-12T18:55:34.800+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-12T18:55:34.800+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-02-12T18:55:34.802+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kitchen-1 unregistered
+2024-02-12T18:55:34.803+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: Consumer stopped
+2024-02-12T18:55:34.815+03:00  INFO 39260 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-12T18:55:34.816+03:00  INFO 39260 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-02-12T18:55:34.819+03:00  WARN 39260 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [kafka-producer-network-thread | producer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/sun.nio.ch.WEPoll.wait(Native Method)
+ java.base@17.0.2/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+ java.base@17.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//org.apache.kafka.common.network.Selector.select(Selector.java:874)
+ app//org.apache.kafka.common.network.Selector.poll(Selector.java:465)
+ app//org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:560)
+ app//org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:328)
+ app//org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2024-02-12T18:55:34.821+03:00  INFO 39260 --- [Thread-5] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-02-12T18:55:34.822+03:00  INFO 39260 --- [Thread-5] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-02-12T18:55:34.823+03:00  INFO 39260 --- [Thread-5] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-12T18:55:34.823+03:00  INFO 39260 --- [Thread-5] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-02-12T18:55:34.823+03:00  INFO 39260 --- [Thread-5] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2024-02-12T18:55:34.826+03:00  INFO 39260 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:55:34.828+03:00  INFO 39260 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-12T18:55:34.831+03:00  INFO 39260 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-12T18:55:34.900+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 39260 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-02-12T18:55:34.900+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T18:55:35.069+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:55:35.069+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-02-12T18:55:35.073+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:55:35.074+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:55:35.074+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:55:35.076+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:55:35.076+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2024-02-12T18:55:35.078+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:55:35.078+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-12T18:55:35.088+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-02-12T18:55:35.187+03:00  INFO 39260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-12T18:55:35.188+03:00  INFO 39260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-12T18:55:35.188+03:00  INFO 39260 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-02-12T18:55:35.204+03:00  INFO 39260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-12T18:55:35.204+03:00  INFO 39260 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 303 ms
+2024-02-12T18:55:35.214+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-02-12T18:55:35.218+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40d12a73
+2024-02-12T18:55:35.218+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-02-12T18:55:35.218+03:00  INFO 39260 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-02-12T18:55:35.243+03:00  INFO 39260 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-12T18:55:35.248+03:00  INFO 39260 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:55:35.248+03:00  INFO 39260 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-12T18:55:35.250+03:00  WARN 39260 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-02-12T18:55:35.264+03:00  INFO 39260 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:55:35.311+03:00  INFO 39260 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-12T18:55:35.312+03:00  INFO 39260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:55:35.406+03:00  WARN 39260 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-12T18:55:35.534+03:00  INFO 39260 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b8bb675, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ccc656, org.springframework.security.web.context.SecurityContextHolderFilter@31799bb8, org.springframework.security.web.header.HeaderWriterFilter@3f0b06c5, org.springframework.security.web.authentication.logout.LogoutFilter@4333bc5f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@258437de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c01a982, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59305cbc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53772c7b, org.springframework.security.web.access.ExceptionTranslationFilter@1ae3eaf4, org.springframework.security.web.access.intercept.AuthorizationFilter@49a12b47]
+2024-02-12T18:55:35.627+03:00  INFO 39260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-12T18:55:35.646+03:00  INFO 39260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-12T18:55:35.647+03:00  INFO 39260 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kitchen-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kitchen
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-02-12T18:55:35.651+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-02-12T18:55:35.651+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-02-12T18:55:35.651+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1707753335651
+2024-02-12T18:55:35.651+03:00  INFO 39260 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Subscribed to topic(s): tacocloud.orders.topic
+2024-02-12T18:55:35.655+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 0.777 seconds (process running for 163.637)
+2024-02-12T18:55:35.655+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Resetting the last seen epoch of partition tacocloud.orders.topic-0 to 0 since the associated topicId changed from null to ipuojmSBQJqeZYPU1N29XQ
+2024-02-12T18:55:35.656+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Cluster ID: K7Z0XpJjRqmb_ymR7l3Tow
+2024-02-12T18:55:35.656+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Discovered group coordinator DESKTOP-G1TVM4T:9092 (id: 2147483647 rack: null)
+2024-02-12T18:55:35.657+03:00  INFO 39260 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-12T18:55:35.657+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] (Re-)joining group
+2024-02-12T18:55:35.659+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Request joining group due to: need to re-join with the given member-id: consumer-kitchen-2-b6c84208-e85e-4b97-8e4d-4b63c843de58
+2024-02-12T18:55:35.659+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-02-12T18:55:35.659+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] (Re-)joining group
+2024-02-12T18:55:35.660+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Successfully joined group with generation Generation{generationId=3, memberId='consumer-kitchen-2-b6c84208-e85e-4b97-8e4d-4b63c843de58', protocol='range'}
+2024-02-12T18:55:35.661+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Finished assignment for group at generation 3: {consumer-kitchen-2-b6c84208-e85e-4b97-8e4d-4b63c843de58=Assignment(partitions=[tacocloud.orders.topic-0])}
+2024-02-12T18:55:35.662+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Successfully synced group in generation Generation{generationId=3, memberId='consumer-kitchen-2-b6c84208-e85e-4b97-8e4d-4b63c843de58', protocol='range'}
+2024-02-12T18:55:35.662+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Notifying assignor about the new Assignment(partitions=[tacocloud.orders.topic-0])
+2024-02-12T18:55:35.663+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Adding newly assigned partitions: tacocloud.orders.topic-0
+2024-02-12T18:55:35.664+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Setting offset for partition tacocloud.orders.topic-0 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-G1TVM4T:9092 (id: 0 rack: null)], epoch=0}}
+2024-02-12T18:55:35.664+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: partitions assigned: [tacocloud.orders.topic-0]
+2024-02-12T18:55:37.075+03:00  INFO 39260 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-02-12T18:55:37.077+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Revoke previously assigned partitions tacocloud.orders.topic-0
+2024-02-12T18:55:37.077+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: partitions revoked: [tacocloud.orders.topic-0]
+2024-02-12T18:55:37.077+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Member consumer-kitchen-2-b6c84208-e85e-4b97-8e4d-4b63c843de58 sending LeaveGroup request to coordinator DESKTOP-G1TVM4T:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-02-12T18:55:37.077+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-02-12T18:55:37.077+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Request joining group due to: consumer pro-actively leaving the group
+2024-02-12T18:55:37.078+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Unsubscribed all topics or patterns and assigned partitions
+2024-02-12T18:55:37.078+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-02-12T18:55:37.078+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-2, groupId=kitchen] Request joining group due to: consumer pro-actively leaving the group
+2024-02-12T18:55:37.080+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-02-12T18:55:37.080+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-12T18:55:37.080+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-02-12T18:55:37.082+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kitchen-2 unregistered
+2024-02-12T18:55:37.082+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: Consumer stopped
+2024-02-12T18:55:37.092+03:00  INFO 39260 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-12T18:55:37.096+03:00  INFO 39260 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:55:37.096+03:00  INFO 39260 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-02-12T18:55:37.098+03:00  INFO 39260 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-02-12T18:55:37.159+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 39260 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-02-12T18:55:37.159+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T18:55:37.308+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:55:37.308+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-02-12T18:55:37.312+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:55:37.313+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:55:37.314+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:55:37.315+03:00  INFO 39260 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:55:37.315+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2024-02-12T18:55:37.317+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:55:37.317+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-12T18:55:37.324+03:00  INFO 39260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2024-02-12T18:55:37.407+03:00  INFO 39260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-12T18:55:37.407+03:00  INFO 39260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-12T18:55:37.407+03:00  INFO 39260 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-02-12T18:55:37.428+03:00  INFO 39260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-12T18:55:37.429+03:00  INFO 39260 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 268 ms
+2024-02-12T18:55:37.439+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-02-12T18:55:37.442+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43bc4bf9
+2024-02-12T18:55:37.442+03:00  INFO 39260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-02-12T18:55:37.442+03:00  INFO 39260 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-02-12T18:55:37.465+03:00  INFO 39260 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-12T18:55:37.470+03:00  INFO 39260 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:55:37.470+03:00  INFO 39260 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-12T18:55:37.471+03:00  WARN 39260 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-02-12T18:55:37.486+03:00  INFO 39260 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:55:37.525+03:00  INFO 39260 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-12T18:55:37.525+03:00  INFO 39260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:55:37.612+03:00  WARN 39260 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-12T18:55:37.726+03:00  INFO 39260 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68c096e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e62691b, org.springframework.security.web.context.SecurityContextHolderFilter@7964209a, org.springframework.security.web.header.HeaderWriterFilter@3e3c78b8, org.springframework.security.web.authentication.logout.LogoutFilter@69a21c6f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11f8a1d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43c8955c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c3ec6b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78803ce4, org.springframework.security.web.access.ExceptionTranslationFilter@464d2286, org.springframework.security.web.access.intercept.AuthorizationFilter@74d65e45]
+2024-02-12T18:55:37.810+03:00  INFO 39260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-12T18:55:37.821+03:00  INFO 39260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-12T18:55:37.822+03:00  INFO 39260 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kitchen-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kitchen
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-02-12T18:55:37.824+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-02-12T18:55:37.824+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-02-12T18:55:37.824+03:00  INFO 39260 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1707753337824
+2024-02-12T18:55:37.824+03:00  INFO 39260 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Subscribed to topic(s): tacocloud.orders.topic
+2024-02-12T18:55:37.827+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Resetting the last seen epoch of partition tacocloud.orders.topic-0 to 0 since the associated topicId changed from null to ipuojmSBQJqeZYPU1N29XQ
+2024-02-12T18:55:37.827+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Cluster ID: K7Z0XpJjRqmb_ymR7l3Tow
+2024-02-12T18:55:37.828+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Discovered group coordinator DESKTOP-G1TVM4T:9092 (id: 2147483647 rack: null)
+2024-02-12T18:55:37.828+03:00  INFO 39260 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 0.687 seconds (process running for 165.81)
+2024-02-12T18:55:37.828+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] (Re-)joining group
+2024-02-12T18:55:37.829+03:00  INFO 39260 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-12T18:55:37.830+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Request joining group due to: need to re-join with the given member-id: consumer-kitchen-3-965dd5fe-660f-42ca-955b-633896729215
+2024-02-12T18:55:37.830+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-02-12T18:55:37.830+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] (Re-)joining group
+2024-02-12T18:55:37.831+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Successfully joined group with generation Generation{generationId=5, memberId='consumer-kitchen-3-965dd5fe-660f-42ca-955b-633896729215', protocol='range'}
+2024-02-12T18:55:37.831+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Finished assignment for group at generation 5: {consumer-kitchen-3-965dd5fe-660f-42ca-955b-633896729215=Assignment(partitions=[tacocloud.orders.topic-0])}
+2024-02-12T18:55:37.832+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Successfully synced group in generation Generation{generationId=5, memberId='consumer-kitchen-3-965dd5fe-660f-42ca-955b-633896729215', protocol='range'}
+2024-02-12T18:55:37.833+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Notifying assignor about the new Assignment(partitions=[tacocloud.orders.topic-0])
+2024-02-12T18:55:37.833+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Adding newly assigned partitions: tacocloud.orders.topic-0
+2024-02-12T18:55:37.834+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Setting offset for partition tacocloud.orders.topic-0 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-G1TVM4T:9092 (id: 0 rack: null)], epoch=0}}
+2024-02-12T18:55:37.834+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: partitions assigned: [tacocloud.orders.topic-0]
+2024-02-12T18:55:42.540+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-12T18:55:42.540+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-12T18:55:42.541+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-12T18:55:42.542+03:00 DEBUG 39260 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/orders
+2024-02-12T18:55:42.542+03:00 DEBUG 39260 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/orders
+2024-02-12T18:55:42.563+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-02-12T18:55:42.564+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-2] Instantiated an idempotent producer.
+2024-02-12T18:55:42.567+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-02-12T18:55:42.568+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-02-12T18:55:42.568+03:00  INFO 39260 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1707753342567
+2024-02-12T18:55:42.571+03:00  INFO 39260 --- [kafka-producer-network-thread | producer-2] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-2] Resetting the last seen epoch of partition tacocloud.orders.topic-0 to 0 since the associated topicId changed from null to ipuojmSBQJqeZYPU1N29XQ
+2024-02-12T18:55:42.571+03:00  INFO 39260 --- [kafka-producer-network-thread | producer-2] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-2] Cluster ID: K7Z0XpJjRqmb_ymR7l3Tow
+2024-02-12T18:55:42.571+03:00  INFO 39260 --- [kafka-producer-network-thread | producer-2] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-2] ProducerId set to 2 with epoch 0
+2024-02-12T18:55:42.591+03:00 DEBUG 39260 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-02-12T18:57:15.875+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Revoke previously assigned partitions tacocloud.orders.topic-0
+2024-02-12T18:57:15.875+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: partitions revoked: [tacocloud.orders.topic-0]
+2024-02-12T18:57:15.875+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Member consumer-kitchen-3-965dd5fe-660f-42ca-955b-633896729215 sending LeaveGroup request to coordinator DESKTOP-G1TVM4T:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-02-12T18:57:15.875+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-02-12T18:57:15.875+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Request joining group due to: consumer pro-actively leaving the group
+2024-02-12T18:57:15.875+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Unsubscribed all topics or patterns and assigned partitions
+2024-02-12T18:57:15.875+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-02-12T18:57:15.875+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-3, groupId=kitchen] Request joining group due to: consumer pro-actively leaving the group
+2024-02-12T18:57:15.876+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-02-12T18:57:15.876+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-12T18:57:15.878+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-02-12T18:57:15.878+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kitchen-3 unregistered
+2024-02-12T18:57:15.878+03:00  INFO 39260 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: Consumer stopped
+2024-02-12T18:57:15.891+03:00  INFO 39260 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-2] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-02-12T18:57:15.893+03:00  INFO 39260 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-02-12T18:57:15.893+03:00  INFO 39260 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-12T18:57:15.893+03:00  INFO 39260 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-02-12T18:57:15.893+03:00  INFO 39260 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-2 unregistered
+2024-02-12T18:57:15.895+03:00  INFO 39260 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:57:15.895+03:00  INFO 39260 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-02-12T18:57:15.896+03:00  INFO 39260 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-02-12T18:57:38.208+03:00  INFO 14016 --- [restartedMain] tacos.TacoCloudApplication               : Starting TacoCloudApplication using Java 17.0.2 with PID 14016 (C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud\target\classes started by Сева Счетов in C:\Users\Сева Счетов\IdeaProjects\taco-cloud\taco-cloud)
+2024-02-12T18:57:38.211+03:00  INFO 14016 --- [restartedMain] tacos.TacoCloudApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T18:57:38.243+03:00  INFO 14016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-12T18:57:38.244+03:00  INFO 14016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-12T18:57:38.772+03:00  INFO 14016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:57:38.773+03:00  INFO 14016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-02-12T18:57:38.793+03:00  INFO 14016 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.IngredientRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:57:38.794+03:00  INFO 14016 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:57:38.795+03:00  INFO 14016 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.TacoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:57:38.796+03:00  INFO 14016 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tacos.data.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T18:57:38.797+03:00  INFO 14016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2024-02-12T18:57:38.804+03:00  INFO 14016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T18:57:38.804+03:00  INFO 14016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-12T18:57:38.829+03:00  INFO 14016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2024-02-12T18:57:39.335+03:00  INFO 14016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-12T18:57:39.342+03:00  INFO 14016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-12T18:57:39.342+03:00  INFO 14016 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-02-12T18:57:39.388+03:00  INFO 14016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-12T18:57:39.388+03:00  INFO 14016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1144 ms
+2024-02-12T18:57:39.411+03:00  INFO 14016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-12T18:57:39.502+03:00  INFO 14016 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e0f4ab7
+2024-02-12T18:57:39.504+03:00  INFO 14016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-12T18:57:39.512+03:00  INFO 14016 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/tacocloud'
+2024-02-12T18:57:39.637+03:00  INFO 14016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-12T18:57:39.679+03:00  INFO 14016 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2024-02-12T18:57:39.681+03:00  INFO 14016 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-12T18:57:39.785+03:00  INFO 14016 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:57:39.885+03:00  INFO 14016 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-12T18:57:39.933+03:00  WARN 14016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-02-12T18:57:40.112+03:00  INFO 14016 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-12T18:57:40.650+03:00  INFO 14016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-12T18:57:40.652+03:00  INFO 14016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:57:40.945+03:00  INFO 14016 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-12T18:57:41.224+03:00  WARN 14016 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-12T18:57:41.610+03:00  INFO 14016 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44c22666, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6688193b, org.springframework.security.web.context.SecurityContextHolderFilter@399320b4, org.springframework.security.web.header.HeaderWriterFilter@24f0e814, org.springframework.security.web.authentication.logout.LogoutFilter@1e85c48, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@297849ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@616609e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e5d09e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40fde73b, org.springframework.security.web.access.ExceptionTranslationFilter@5dd3ffe2, org.springframework.security.web.access.intercept.AuthorizationFilter@4774cb2b]
+2024-02-12T18:57:41.965+03:00  INFO 14016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-12T18:57:42.017+03:00  INFO 14016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-12T18:57:42.055+03:00  INFO 14016 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kitchen-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kitchen
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-02-12T18:57:42.113+03:00  INFO 14016 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-02-12T18:57:42.113+03:00  INFO 14016 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-02-12T18:57:42.113+03:00  INFO 14016 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1707753462112
+2024-02-12T18:57:42.115+03:00  INFO 14016 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Subscribed to topic(s): tacocloud.orders.topic
+2024-02-12T18:57:42.127+03:00  INFO 14016 --- [restartedMain] tacos.TacoCloudApplication               : Started TacoCloudApplication in 4.265 seconds (process running for 4.833)
+2024-02-12T18:57:42.365+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Resetting the last seen epoch of partition tacocloud.orders.topic-0 to 0 since the associated topicId changed from null to ipuojmSBQJqeZYPU1N29XQ
+2024-02-12T18:57:42.367+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Cluster ID: K7Z0XpJjRqmb_ymR7l3Tow
+2024-02-12T18:57:42.368+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Discovered group coordinator DESKTOP-G1TVM4T:9092 (id: 2147483647 rack: null)
+2024-02-12T18:57:42.370+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] (Re-)joining group
+2024-02-12T18:57:42.378+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Request joining group due to: need to re-join with the given member-id: consumer-kitchen-1-087d7ff3-422b-40fc-bcd9-e3a53625548f
+2024-02-12T18:57:42.380+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-02-12T18:57:42.380+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] (Re-)joining group
+2024-02-12T18:57:42.381+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Successfully joined group with generation Generation{generationId=7, memberId='consumer-kitchen-1-087d7ff3-422b-40fc-bcd9-e3a53625548f', protocol='range'}
+2024-02-12T18:57:42.382+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Finished assignment for group at generation 7: {consumer-kitchen-1-087d7ff3-422b-40fc-bcd9-e3a53625548f=Assignment(partitions=[tacocloud.orders.topic-0])}
+2024-02-12T18:57:42.387+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Successfully synced group in generation Generation{generationId=7, memberId='consumer-kitchen-1-087d7ff3-422b-40fc-bcd9-e3a53625548f', protocol='range'}
+2024-02-12T18:57:42.387+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Notifying assignor about the new Assignment(partitions=[tacocloud.orders.topic-0])
+2024-02-12T18:57:42.389+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Adding newly assigned partitions: tacocloud.orders.topic-0
+2024-02-12T18:57:42.398+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Setting offset for partition tacocloud.orders.topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-G1TVM4T:9092 (id: 0 rack: null)], epoch=0}}
+2024-02-12T18:57:42.399+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: partitions assigned: [tacocloud.orders.topic-0]
+2024-02-12T18:57:48.349+03:00  INFO 14016 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-12T18:57:48.349+03:00  INFO 14016 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-12T18:57:48.352+03:00  INFO 14016 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-02-12T18:57:48.360+03:00 DEBUG 14016 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/orders
+2024-02-12T18:57:48.381+03:00 DEBUG 14016 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/orders
+2024-02-12T18:57:48.526+03:00  INFO 14016 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-02-12T18:57:48.533+03:00  INFO 14016 --- [http-nio-8080-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2024-02-12T18:57:48.545+03:00  INFO 14016 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2024-02-12T18:57:48.545+03:00  INFO 14016 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2024-02-12T18:57:48.545+03:00  INFO 14016 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1707753468545
+2024-02-12T18:57:48.549+03:00  INFO 14016 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition tacocloud.orders.topic-0 to 0 since the associated topicId changed from null to ipuojmSBQJqeZYPU1N29XQ
+2024-02-12T18:57:48.549+03:00  INFO 14016 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: K7Z0XpJjRqmb_ymR7l3Tow
+2024-02-12T18:57:48.550+03:00  INFO 14016 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 3 with epoch 0
+2024-02-12T18:57:48.629+03:00 DEBUG 14016 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-02-12T18:58:18.803+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Revoke previously assigned partitions tacocloud.orders.topic-0
+2024-02-12T18:58:18.804+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: partitions revoked: [tacocloud.orders.topic-0]
+2024-02-12T18:58:18.804+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Member consumer-kitchen-1-087d7ff3-422b-40fc-bcd9-e3a53625548f sending LeaveGroup request to coordinator DESKTOP-G1TVM4T:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-02-12T18:58:18.804+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-02-12T18:58:18.804+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Request joining group due to: consumer pro-actively leaving the group
+2024-02-12T18:58:18.804+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Unsubscribed all topics or patterns and assigned partitions
+2024-02-12T18:58:18.805+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-02-12T18:58:18.805+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kitchen-1, groupId=kitchen] Request joining group due to: consumer pro-actively leaving the group
+2024-02-12T18:58:18.807+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-02-12T18:58:18.807+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-12T18:58:18.807+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-02-12T18:58:18.810+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kitchen-1 unregistered
+2024-02-12T18:58:18.810+03:00  INFO 14016 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kitchen: Consumer stopped
+2024-02-12T18:58:18.827+03:00  INFO 14016 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-02-12T18:58:18.828+03:00  INFO 14016 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-02-12T18:58:18.828+03:00  INFO 14016 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-02-12T18:58:18.828+03:00  INFO 14016 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-02-12T18:58:18.828+03:00  INFO 14016 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2024-02-12T18:58:18.832+03:00  INFO 14016 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T18:58:18.834+03:00  INFO 14016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-12T18:58:18.837+03:00  INFO 14016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
