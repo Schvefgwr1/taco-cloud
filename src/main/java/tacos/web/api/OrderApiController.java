@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import tacos.data.OrderRepository;
 import tacos.data.TacoRepository;
 import tacos.data.UserRepository;
+import tacos.message.RabbitOrderMessagingService;
 import tacos.model.TacoOrder;
-import tacos.message.TacoOrderMessagingService;
-import tacos.kitchen.messaging.jms.OrderReceiver;
+//import tacos.kitchen.messaging.jms.OrderReceiver;
 
 @RestController
 @RequestMapping(path="/api/orders", produces="application/json")
@@ -20,23 +20,23 @@ import tacos.kitchen.messaging.jms.OrderReceiver;
 public class OrderApiController {
 
     private OrderRepository repo;
-    private TacoOrderMessagingService messageService;
+    private RabbitOrderMessagingService messageService;
     private TacoRepository tacoRepository;
     private UserRepository userRepository;
-    private OrderReceiver orderReceiver;
+    //private OrderReceiver orderReceiver;
     @Autowired
     public OrderApiController(
             OrderRepository repo,
             TacoRepository tacoRepository,
             UserRepository userRepository,
-            TacoOrderMessagingService messageService,
-            OrderReceiver orderReceiver
+            RabbitOrderMessagingService messageService
+            //OrderReceiver orderReceiver
     ) {
         this.repo = repo;
         this.messageService = messageService;
         this.tacoRepository = tacoRepository;
         this.userRepository = userRepository;
-        this.orderReceiver = orderReceiver;
+        //this.orderReceiver = orderReceiver;
     }
 
     @GetMapping
@@ -48,12 +48,12 @@ public class OrderApiController {
     @ResponseStatus(HttpStatus.CREATED)
     public TacoOrder postOrder(@RequestBody OrderForm orderForm) {
         TacoOrder order = orderForm.toTacoOrder(tacoRepository, userRepository);
-        messageService.sendOrderConvert(order);
+        messageService.sendOrder(order);
         return repo.save(order);
     }
 
-    @GetMapping(value="/receive_order")
-    public TacoOrder getReceiveOrder() {
-        return orderReceiver.receiveOrder();
-    }
+//    @GetMapping(value="/receive_order")
+//    public TacoOrder getReceiveOrder() {
+//        return orderReceiver.receiveOrder();
+//    }
 }
