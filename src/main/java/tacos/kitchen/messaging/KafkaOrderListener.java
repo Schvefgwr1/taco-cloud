@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import tacos.integration.filesystem.FileWriterGateway;
 
 @Component
 public class KafkaOrderListener {
@@ -25,5 +26,7 @@ public class KafkaOrderListener {
         //пример записи в файл для просмотра результата
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Сева Счетов\\IdeaProjects\\taco-cloud\\taco-cloud\\src\\main\\java\\tacos\\kitchen\\messaging\\logging.log"));
         oos.writeObject(order);
+
+
     }
 }

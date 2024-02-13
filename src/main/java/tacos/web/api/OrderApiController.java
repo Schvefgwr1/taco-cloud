@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import tacos.data.OrderRepository;
 import tacos.data.TacoRepository;
 import tacos.data.UserRepository;
+import tacos.integration.email.models.EmailOrder;
 import tacos.message.KafkaOrderMessagingService;
 import tacos.model.TacoOrder;
 
@@ -51,6 +52,13 @@ public class OrderApiController {
         messageService.sendOrder(order);
         return repo.save(order);
     }
+
+    @PostMapping(consumes="application/json", value="fromEmail")
+    @ResponseStatus(HttpStatus.CREATED)
+    public String postOrderFromEmail(@RequestBody EmailOrder order) {
+        return "Yhooo!!!";
+    }
+
 // в кафка нет активных вызовов, только слушатели
 //    @GetMapping(value="/receive_order")
 //    public TacoOrder getReceiveOrder() {
