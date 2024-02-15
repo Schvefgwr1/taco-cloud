@@ -34,3 +34,10 @@ logging:
 taco:
   orders:
     pageSize: 10
+tacocloud:
+  email:
+    host: imap.gmail.com
+    mailbox: INBOX
+    username: test
+    password: test
+    poll-rate: 10000
